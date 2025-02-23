@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мессенджер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="search">
+                <input type="text" id="searchInput" placeholder="Поиск людей...">
+            </div>
+            <ul id="userList">
+                <!-- Список людей будет здесь -->
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="chat-header">
+                <h2 id="selectedUserName">...</h2>
+            </div>
+            <div class="chat-window" id="chatWindow">
+                <div class="no-chat-selected">
+                    <p>=＾● ⋏ ●＾=<br>Выберите чат, чтобы начать общение<br>...</p>
+                </div>
+                <!-- Окно чата будет здесь -->
+            </div>
+            <div class="chat-input" id ="chat-input">
+                <input type="text" id="messageInput" placeholder="Введите сообщение..." disabled>
+                <button id="sendButton" disabled>Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
